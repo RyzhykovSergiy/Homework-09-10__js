@@ -1,0 +1,291 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+}
+
+body {
+	min-width: 320px;
+	font-size: 15px;
+	font-family: sans-serif;
+	color: #000;
+	background-color: #fff;
+}
+
+.container  {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.row::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.col-12 {
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-6 {
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-4 {
+	width: 33.3333%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-3 {
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-2 {
+	width: 16.6666%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-1 {
+	width: 8.3333%;
+	float: left;
+	padding: 0 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-12 {
+		width: 100%;
+	}
+
+}
+
+.wrapper {
+	width: 100%;
+
+}
+
+
+.section-carousel	{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+h1 {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: bold;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #444;
+}
+
+.section-select {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.section-select select{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.section-select h2 {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #444;
+}
+
+.section-checkbox h2 {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #444;
+}
+
+form {
+	background: #99CCFF;
+	padding: 10px;
+}
+form div {
+	padding-bottom: 10px;
+}
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background-image: url(../img/checkbox.png);
+}
+
+.section-checkbox .niceCheckDisabled {
+	background-image: url(../img/checkbox-disabled.png);
+}
+
+.niceCheck input {
+	display: none;
+}
+
+.section-checkbox label {
+	vertical-align: text-top;
+}
+
+.form-box	label {
+	position: relative;
+}
+
+.form-box label input[type="checkbox"] {
+	display:none;
+}
+
+.form-box input[type="checkbox"] + span {
+	display:inline-block;
+	width:17px;
+	height:17px;
+	margin:-1px 4px 0 0;
+	vertical-align:middle;
+	background:url(../img/checkbox.png) no-repeat;
+	background-position: 0 0;
+	cursor:pointer;
+}
+
+.form-box input[type="checkbox"]:checked + span {
+	background-position: 0 -17px;
+}
+
+.form-box input[disabled="disabled"] + span {
+	display:inline-block;
+	width:17px;
+	height:17px;
+	margin:-1px 4px 0 0;
+	vertical-align:middle;
+	background:url(../img/checkbox-disabled.png) no-repeat;
+	background-position: 0 0;
+	cursor:pointer;
+}
+.form-box input[disabled="disabled"]:checked + span {
+	background-position: 0 -17px;
+}
+
+.section-checkbox-css h2 {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #444;
+}
+
+
+
+.section-nav {
+	background-color: #333;
+	padding: 0;
+}
+
+
+.nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.nav ul li {
+	display:inline-block;
+	position:relative;
+}
+
+.nav li ul {    
+	background-color: #045F94;
+	position:absolute;
+	left:0;
+	top:40px;
+	width:200px;
+	z-index: 11;
+	display: none;
+}
+.nav li li {
+	position:relative;
+	margin:0;
+	display:block;
+}
+.nav li li ul {
+	position:absolute;
+	top:0;
+	left:200px;
+	margin:0;
+	z-index: 11;
+}
+
+.nav a {
+	line-height:40px;
+	padding:0 12px;
+	margin:0 12px;
+}
+.nav a {
+	color:#fff;
+	text-decoration:none;
+	display:block;
+}
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+	color: #fff;
+}
+
+.nav li li a {
+	border-bottom:solid 1px #fff;
+	margin:0 10px;
+	padding:0;
+}
+.nav li li:last-child a {
+	border-bottom:none;
+}
+
+.ul.sub-menu {
+	display:none;
+}
+
+.nav li.dropdown > a {
+	background-image:url('../img/arrow-down.png');
+	background-position:right 20px;
+	background-repeat:no-repeat;
+}
+
+.nav li li.dropdown > a {
+	background-image:url('../img/arrow-right.png');
+	background-position:right 16px;
+	background-repeat:no-repeat;
+}
+
+
+
+
+

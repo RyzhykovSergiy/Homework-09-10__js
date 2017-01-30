@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 09-10__js</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jcarousel.responsive.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+</head>
+<body class="body">
+	<div class="wrapper">
+		<section class="section-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="nav">
+							<ul class="content clearfix">
+								<li><a href="#">Nav 1</a></li>
+								<li><a href="#">Nav 2</a></li>
+								<li class="dropdown">
+									<a href="#">Nav 3</a>
+									<ul class="sub-menu">
+										<li><a href="#">Nav 3.1</a></li>
+										<li><a href="#">Nav 3.2</a></li>
+										<li><a href="#">Nav 3.3</a></li>
+										<li class="dropdown">
+											<a href="#">Nav 3.4</a>
+											<ul class="sub-menu">
+												<li><a href="#">Nav 3.4.1</a></li>
+												<li class="dropdown">
+													<a href="#">Nav 3.4.2</a>
+													<ul class="sub-menu">
+														<li><a href="#">Nav 3.4.2.1</a></li>
+														<li><a href="#">Nav 3.4.2.2</a></li>
+														<li><a href="#">Nav 3.4.2.3</a></li>
+														<li><a href="#">Nav 3.4.2.4</a></li>
+														<li><a href="#">Nav 3.4.2.5</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Nav 3.4.3</a></li>
+												<li><a href="#">Nav 3.4.4</a></li>
+												<li><a href="#">Nav 3.4.5</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Nav 3.5</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Nav 4</a></li>
+								<li><a href="#">Nav 5</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-carousel">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>Карусель</h1>
+						<div class="jcarousel-wrapper">
+								<div class="jcarousel">
+										<ul>
+												<li><img src="img/winter.jpg" alt="Image 1"></li>
+												<li><img src="img/spring.jpg" alt="Image 2"></li>
+												<li><img src="img/summer.jpg" alt="Image 3"></li>
+												<li><img src="img/winter.jpg" alt="Image 4"></li>
+										</ul>
+								</div>
+								<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+								<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+								<p class="jcarousel-pagination"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-select">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>select2</h2>
+					</div>
+					<div class="col-6">
+						<select class="js-example-responsive" style="width: 100%">
+							<option value="VS">Все...</option>
+							<optgroup label="Группа 1">
+								<option value="AL">Alabama</option>
+								<option value="WY">Wyoming</option>
+							</optgroup>
+							<optgroup label="Группа 2">
+								<option value="AR">Arkansas</option>
+								<option value="IL">Illinois</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="OK">Oklahoma</option>
+								<option value="SD">South Dakota</option>
+								<option value="TX">Texas</option>
+								<option value="TN">Tennessee</option>
+								<option value="WI">Wisconsin</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="col-6">
+						<select class="js-example-basic-multiple" multiple="multiple" style="width: 100%">
+							<option value="VS">Все...</option>
+							<optgroup label="Группа 1">
+								<option value="AL">Alabama</option>
+								<option value="WY">Wyoming</option>
+							</optgroup>
+							<optgroup label="Группа 2">
+								<option value="AR">Arkansas</option>
+								<option value="IL">Illinois</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="OK">Oklahoma</option>
+								<option value="SD">South Dakota</option>
+								<option value="TX">Texas</option>
+								<option value="TN">Tennessee</option>
+								<option value="WI">Wisconsin</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-checkbox">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>чекбоксы jquery</h2>
+						<form action="#">
+							<div>
+								<label for="ch1">label 1</label>
+								<span class="niceCheck">
+									<input type="checkbox" name="ch1" id="ch1" />
+								</span>
+							</div>
+
+							<div>
+								<label for="ch2">label 2</label>
+								<span class="niceCheck">
+									<input type="checkbox" name="ch1" id="ch2" checked="checked" tabindex="2" value="2" />
+								</span>
+							</div>
+
+							<div>
+								<label for="ch3">label 3</label>
+								<span class="niceCheck">
+									<input type="checkbox" name="ch1" id="ch3" checked="checked" disabled="disabled" />
+								</span>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-checkbox-css">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>чекбоксы css</h2>
+						<form action="#" class="form-box">
+							<div>
+								<label for="ch10">label 1
+									<input type="checkbox" id="ch10" name="ch10"/>
+									<span></span>
+								</label>
+							</div>
+							<div>
+								<label for="ch11">label 2
+									<input type="checkbox" id="ch11" name="ch11"/>
+									<span></span>
+								</label>
+							</div>
+							<div>
+								<label for="ch12">label 3
+									<input type="checkbox" id="ch12" name="ch12" checked="checked" disabled="disabled"/>
+									<span></span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+
+
+
+
+	<script src="js/jquery.jcarousel.min.js"></script>		
+	<script src="js/jcarousel.responsive.js"></script>
+	<script src="js/jquery.color.js"></script>	
+	<script src="js/script.js"></script>	
+</body>
+</html>
